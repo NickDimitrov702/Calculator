@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice your skills</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   
+</head>
+<body>
+    <section id="main-wrapper">
+        <div id="main">
+            <h1>SPLITTER</h1>
+            <div id="calculator-wrapper">
+                <section id="bill-side">
+                    <div class="bill-input-wrapper">
+                        <h2 class="bill-tittle">Bill</h2>
+                        <div class="input-wrapper-one">
+                            <span>$</span><input onClick="this.select();"  inputmode="numeric" value="0" class="input-bill">
+                        </div>
+                    </div>
+                    <div class="select-tip-wrapper">
+                        <h2 class="bill-tittle">Select Tip %</h2>
+                        <div id="tip-percentige-wrapper">
+                            <input type="button" class="percentige-butt" value="5%">
+                            <input type="button" class="percentige-butt" value="10%">
+                            <input type="button" class="percentige-butt" value="15%">
+                            <input type="button" class="percentige-butt" value="25%">
+                            <input type="button" class="percentige-butt" value="50%">
+                            <input type="button" class="percentige-butt" value="Custom" id="custom-btn">
+                        </div>
+                    </div>
+                    <div class="number-of-people-wrapper">
+                        <h2 class="bill-tittle">Number of People</h2>
+                        <div class="input-wrapper-one">
+                            <i class="fas fa-user-alt"></i><input onClick="this.select();" inputmode="numeric" value="0" class="input-people" >
+                        </div>
+                    </div> 
+                </section>
+                <section id="total-tip-side">
+                    <section class="tips-wrapper">
+                        <div class="tip-amount-person">
+                            <div class="tip-amount">
+                                <p class="tip-font">Tip Amount</p>
+                                <p class="tip-font-person">/ person</p>
+                            </div>
+                            <p class="total-amount-style" id="tip-amount-price">$0.00</p>
+                        </div>
+                        <div class="total-tip">
+                            <div class="tip-amount">
+                                <p class="tip-font">Total</p>
+                                <p class="tip-font-person">/ person</p>
+                            </div>
+                            <p class="total-amount-style" id="total-amount-price">$0.00</p>
+                        </div>
+                    </section>
+                    <div class="button">
+                        <button id="reset">RESET</button>
+                    </div>
+                </section>
+            </div>  
+        </div>
+    </section>
+</body>
+<script type="text/javascript"  src="source.js"></script>
+</html>
